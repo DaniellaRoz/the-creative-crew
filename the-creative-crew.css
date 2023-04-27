@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 71px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+}
+
+header h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+
+    margin-bottom: 19px;
+}
+
+.bio {
+    font-family: Poppins, sans-serif;
+    width: 333px;
+
+    margin-top: 19px;
+}
+
+.bio h2 {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.bio p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+main {
+    margin: 12px;
+
+    display: grid;
+    grid-template-areas: /* u, v, w, x, y and z denote whitespace */
+        "a u"
+        "a b"
+        "a b"
+        "a b"
+        "v b"
+        "c w"
+        "c d"
+        "c d"
+        "c d"
+        "x d"
+        "e y"
+        "e f"
+        "e f"
+        "e f"
+        "z f";
+}
+
+.portrait {
+    width: 180px;
+    
+    display: grid;
+    grid-template-areas: 
+        "a b"
+        "a b"
+        "a b"
+        "a b"
+        "a b"
+        "a b"
+        "a b"
+        "a b"
+        "a b"
+        "c c";
+}
+
+.portrait img {
+    width: 139px;
+    height: 208px;
+
+    grid-area: a;
+}
+
+.portrait .title {
+    writing-mode: vertical-lr;
+    font-family: 'PT Serif', serif;
+    font-size: 10px;
+    line-height: 13px;
+
+    grid-area: b;
+}
+
+.portrait .name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+
+    grid-area: c;
+}
+
+footer {
+    position: absolute;
+    bottom: 1%;
+    z-index: -1;
+
+    width: 100%;
+}
+
+footer p {
+    color: #A9A9A9;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    line-height: 17px;
+    font-size: 14px;
+}
+
+.github-link {
+    display: inline;
+    font-weight: bold;
+    color: inherit;
+}
+
+.github-link:visited {
+    color: inherit;
+}
+
+.github-link:hover {
+    color: #000;
+}
+
+#bill {
+    grid-area: a;
+}
+
+#saba {
+    grid-area: b;
+}
+
+#shae {
+    grid-area: c;
+}
+
+#skylah {
+    grid-area: d;
+}
+
+#griff {
+    grid-area: e;
+}
+
+#stan {
+    grid-area: f;
+}
