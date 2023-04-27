@@ -40,7 +40,7 @@ main {
     margin: 12px;
 
     display: grid;
-    grid-template-areas: /* u, v, w, x, y and z denote whitespace */
+    grid-template-areas: /* u, v, w, x, y, z denotes whitespace */
         "a u"
         "a b"
         "a b"
@@ -101,8 +101,8 @@ main {
 }
 
 footer {
-    position: absolute;
-    bottom: 1%;
+    margin-top: 25px;
+    margin-bottom: 5px;
     z-index: -1;
 
     width: 100%;
@@ -152,4 +152,60 @@ footer p {
 
 #stan {
     grid-area: f;
+}
+
+@media only screen and (min-width: 494px) {
+
+    header {
+        display: grid;
+        grid-template-areas: "left right";
+
+        margin-right: 240px;
+        margin-left: 240px;
+    }
+
+    header h1 {
+        grid-area: left;
+    }
+
+    .bio {
+        grid-area: right;
+    }
+    
+    main {
+        display: grid;
+        grid-template-areas: 
+        "a u c"
+        "a b c"
+        "a b c"
+        "a b c"
+        "v b w"
+        "d x f"
+        "d e f"
+        "d e f"
+        "d e f"
+        "y e z";
+
+        margin-right: 240px;
+        margin-left: 240px;
+    }
+
+    .portrait img {
+        width: 237px;
+        height: 341px;
+    }
+
+    .portrait .title {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .portrait .name {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
 }
